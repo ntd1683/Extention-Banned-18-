@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Ngăn Chặn Nội Dung 18+",
+  "version": "1.0",
+  "description": "Ngăn chặn truy cập vào các trang web 18+",
+  "icons": {
+    "16": "icon/icon.png",
+    "48": "icon/icon.png",
+    "128": "icon/icon.png"
+  },
+  "permissions": [
+    "storage",
+    "history",
+    "downloads"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icon/icon.png",
+      "48": "icon/icon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["manage/manage.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["json/sensitive_words.json"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
