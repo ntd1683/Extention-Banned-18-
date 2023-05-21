@@ -25,7 +25,7 @@ và lấy cái `link` lịch sử đầu tiên. Sau đó lưu vào `Storage` cũ
 
 ![1-C1](https://raw.githubusercontent.com/ntd1683/Extention-Banned-18-/main/image/1.png)
 
-- C2: Thông qua [link này]()
+- C2: Thông qua [link này](https://github.com/ntd1683/Extention-Banned-18-/releases/tag/v1.0.0)
 
 ### Cài đặt Extension
 - B1: Giải nén tệp vừa tải: Chuột phải vào file chọn `Extract to Extention-Banned-18-`
